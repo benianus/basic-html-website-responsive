@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles.css" />
+    <style>
+      .input-labels {
+        display: flex;
+        flex-direction: row;
+        margin: 16px;
+      }
+      .labels {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 16px;
+      }
+      .labels > label {
+        padding-bottom: 16px;
+      }
+      .fields {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+      }
+      .fields > input,
+      textarea {
+        margin-bottom: 16px;
+      }
+      .submit {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+      }
+      .btn-send {
+        margin-left: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="brand">
+          <img src="" alt="logo" />
+          <p class="">Mohamed BENIANE</p>
+        </div>
+        <div class="pages">
+          <p><a href="index.html">Home</a></p>
+          <p><a href="Projects.html">Projects</a></p>
+          <p><a href="Articles.html">Articles</a></p>
+          <p><a href="Contact.html">Contact</a></p>
+        </div>
+      </nav>
+    </header>
+    <main class="main-content-contac-page">
+      <form action="#" class="form">
+        <div class="input-labels">
+          <div class="labels">
+            <label for="name" class="name-label">Name</label>
+            <label for="email" class="email-label">Email</label>
+            <label for="message" class="message-label">Message</label>
+          </div>
+          <div class="fields">
+            <input type="text" id="name" />
+            <input type="email" id="email" />
+            <textarea name="message" id="message"></textarea>
+          </div>
+        </div>
+        <div class="submit">
+          <input type="submit" value="Send" class="btn-send"/>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
